@@ -1,0 +1,29 @@
+# .github/workflows/build.yml
+
+name: Build and Deploy Astro Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # 或您项目所需的Node.js版本
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro site
+        uses: withastro/astro@v1
+
+      # （可选）后续步骤，如部署到Vercel、Netlify等平台
