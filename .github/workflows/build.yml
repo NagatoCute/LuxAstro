@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # 或您项目所需的Node.js版本
+          node-version: '20' # 或您项目所需的Node.js版本
 
       - name: Install dependencies
         run: npm ci
