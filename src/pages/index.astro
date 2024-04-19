@@ -1,10 +1,10 @@
----
+<!-- ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
-
+--- -->
+<!-- 
 <!doctype html>
 <html lang="en">
 	<head>
@@ -14,19 +14,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<main>
 			<h1>Welcome to LuxGelida's Blog</h1>
-			<p>
+			<p> -->
 				<!-- Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
 				template serves as a lightweight, minimally-styled starting point for anyone looking to build
 				a personal website, blog, or portfolio with Astro. 
 			-->
-			</p>
-			<p>
+			<!-- </p>
+			<p> -->
 				<!-- This template comes with a few integrations already configured in your
 				<code>astro.config.mjs</code> file. You can customize your setup with
 				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project. -->
+				React, or Vue to your project.
 				这是我的主页
-			</p>
+			</p> -->
 			<!-- <p>Here are a few ideas on how to get started with the template:</p> -->
 			<!-- <ul>
 				<li>Edit this page in <code>src/pages/index.astro</code></li>
@@ -45,8 +45,28 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 					href="https://github.com/NagatoCute"
 					>astro-blog-template
 				</a> by <a href="https://twitter.com/">Maxi Ferreira</a>.
-			</p> -->
+			</p>
 		</main>
 		<Footer />
 	</body>
+</html> -->
+
+---
+---
+
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type ="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content = {Astro.generator} >
+    <title>Astro</title>
+  </head>
+  <body>
+	<a href="/">首页</a>
+<a href="/about/">关于</a>
+<h1>关于我</h1>
+<h2>……和我的新 Astro 网站！</h2>
+    <h1>Welcome!</h1>
+  </body>
 </html>
